@@ -1,11 +1,11 @@
 import React from 'react'
-import laptop from "../assets/laptop.jpeg"
-import hihi from "../assets/hihi.png"
+import laptop from "../../assets/laptop.jpeg"
+import hihi from "../../assets/hihi.png"
 
 const Hero = () => {
     return (
-        <div className="w-full h-screen bg-white">
-            <div className=' max-w-8xl mx-auto  flex justify-center gap-8 px-40'>
+        <div className="w-full bg-white">
+            <div className=' bg-blue-600 max-w-8xl mx-auto  flex justify-center gap-8 px-40'>
 
 
                 <div className='w-full  gap-10 h-120 flex '>

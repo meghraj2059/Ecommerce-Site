@@ -4,7 +4,7 @@ import React from 'react'
 const TopBar = () => {
   return (
 
-    <div className='w-full h-12 bg-black flex p-3'>
+    <div className='max-w-8xl mx-auto h-12 bg-black flex p-3'>
       <div className='ml-120 text-sm text-white'>
         <h1>
           Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
