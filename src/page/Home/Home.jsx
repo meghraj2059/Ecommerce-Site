@@ -4,6 +4,8 @@ import FlashSales from './FlashSales'
 import Categories from './Categories'
 import BestSelling from './BestSelling'
 import Products from './Products'
+import Banner from './Banner'
+import NewArrival from './NewArrival'
 
 const Home = () => {
   return (
@@ -12,7 +14,11 @@ const Home = () => {
       <FlashSales/>
       <Categories/>
       <BestSelling/>
+      <Banner/>
       <Products/>
+      <NewArrival/>
+      
+      
       
       
     </div>

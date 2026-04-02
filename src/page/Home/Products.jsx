@@ -37,6 +37,7 @@ const Products = () => {
         },
         {
             id: 5,
+            rr:"New",
             name: "Kids Electric Car",
             price: 960,
             rating: 5,
@@ -53,6 +54,7 @@ const Products = () => {
         },
         {
             id: 7,
+            rr:"New",
             name: "GP11 Shooter USB Gamepad",
             price: 660,
             rating: 4.5,
@@ -83,12 +85,15 @@ const Products = () => {
                         <ArrowRight className=' w-10 h-10 bg-gray-300 rounded-full size-7 cursor-pointer hover:text-black' />
                     </div>
                 </div>
-                <div className='flex flex-wrap gap-3 mt-10'>
+                <div className='flex flex-wrap gap-x-3 mt-10 gap-y-12'>
                     {
                         pro.map((item) => (
-                            <div className='flex flex-col h-50 w-70 bg-white rounded-xl p-3 border justify-between shadow-md  '
-                                key={item.id} >
-
+                            <div className='w-70 bg-white rounded-xl flex flex-col justify-between p-3 shadow-md'
+                                key={item.id}>
+                                    <div className='text-center ml-4 w-15 rounded bg-green-400 text-white '>
+                                        {item.rr}
+                                    </div>
+                                    
                                 <ul className='space-y-2 flex flex-col items-end'>
                                     <li className='w-7 h-7 rounded-full bg-white flex items-center justify-center'>
                                         <Eye className='size-4' />
@@ -98,13 +103,32 @@ const Products = () => {
                                     </li>
                                 </ul>
 
-                                 <div className='flex-1 flex items-center justify-center -mt-15'>
-                                   <img src={item.image}
-                                    alt=""
-                                    className='h-40 object-contain' 
+                                <div className='flex-1 flex items-center justify-center -mt-15'>
+                                    <img src={item.image}
+                                        alt=""
+                                        className='h-40 w-40 object-contain'
                                     />
 
                                 </div>
+
+                                <div className='bg-black text-white text-center py-2 rounded-md hover:bg-gray-800 cursor-pointer'>
+                                    Add To Cart
+
+                                </div>
+                                <div className='justify-center items-center text-center text-sm font-semibold line-clamp-2'>
+                                    {item.name}
+                                </div>
+                                <div className='flex gap-3 items-center'>
+                                    <span className='text-red-600 font-bold'>${item.price}</span>
+
+                                </div>
+
+                                <div className='flex gap-2 text-sm text-gray-600'>
+                                    <span>{"⭐".repeat(6)}</span>
+                                    <span>({item.reviews})</span>
+                                </div>
+                                
+
 
                             </div>
 
@@ -113,6 +137,9 @@ const Products = () => {
                         )
                     }
 
+                </div>
+                <div className=' w-48 h-10 bg-red-700 text-white text-center rounded justify-between items-center text-xl mt-10 ml-[500px] px-4 py-1'>
+                    <button> View All Products</button>
                 </div>
             </div>
         </div>

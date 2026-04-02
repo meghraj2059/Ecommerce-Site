@@ -65,7 +65,7 @@ const FlashSales = () => {
             </ul>
           </div>
           <div className=' flex gap-1 text-gray-700 '>
-            <ArrowLeft className=' w-10 h-10 bg-gray-300 rounded-full size-7cursor-pointer hover:text-black' />
+            <ArrowLeft className=' w-10 h-10 bg-gray-300 rounded-full size-7 cursor-pointer hover:text-black' />
             <ArrowRight className=' w-10 h-10 bg-gray-300 rounded-full size-7 cursor-pointer hover:text-black' />
 
           </div>
