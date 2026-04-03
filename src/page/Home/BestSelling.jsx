@@ -55,7 +55,7 @@ const BestSelling = () => {
                     {
                         products.map((obj) => (
 
-                            <div  className='w-70 bg-white rounded-xl flex flex-col justify-between p-3 shadow-md' key={obj.id}>
+                            <div  className='w-70 bg-white rounded-xl flex flex-col justify-between p-3 shadow-md border' key={obj.id}>
                                 <ul className='space-y-2 flex flex-col items-end'>
                                     <li className='w-7 h-7 rounded-full bg-white flex items-center justify-center'>
                                         <Eye className='size-4' />

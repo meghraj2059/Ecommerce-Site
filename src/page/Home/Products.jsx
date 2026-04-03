@@ -88,7 +88,7 @@ const Products = () => {
                 <div className='flex flex-wrap gap-x-3 mt-10 gap-y-12'>
                     {
                         pro.map((item) => (
-                            <div className='w-70 bg-white rounded-xl flex flex-col justify-between p-3 shadow-md'
+                            <div className='w-70 bg-white rounded-xl flex flex-col justify-between p-3 shadow-md border'
                                 key={item.id}>
                                     <div className='text-center ml-4 w-15 rounded bg-green-400 text-white '>
                                         {item.rr}

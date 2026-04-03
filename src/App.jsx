@@ -6,6 +6,7 @@ import FlashSales from './page/Home/FlashSales'
 import Home from './page/Home/Home'
 import { BrowserRouter, Routes } from 'react-router-dom'
 import { Route } from 'lucide-react'
+import About from './About/About'
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <TopBar/>
   <Navbar/>
   <Home/>
+  <About/>
       
       {/* <Routes>
         <Route path='/' element={<Home/>}/>

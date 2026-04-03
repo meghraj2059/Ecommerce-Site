@@ -76,7 +76,7 @@ const FlashSales = () => {
             {products.map((item) => (
               <div
                 key={item.id}
-                className='w-70 bg-white rounded-xl flex flex-col justify-between p-3 shadow-md'
+                className='w-70 bg-gray-300 rounded-xl flex flex-col justify-between p-3 shadow-md border'
               >
 
                 <div className='flex justify-between px-3 pt-3'>

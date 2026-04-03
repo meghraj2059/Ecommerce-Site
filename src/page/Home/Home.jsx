@@ -6,10 +6,12 @@ import BestSelling from './BestSelling'
 import Products from './Products'
 import Banner from './Banner'
 import NewArrival from './NewArrival'
+import Footer from './Footer'
+import About from '../../About/About'
 
 const Home = () => {
   return (
-    <div className='flex flex-col gap-y-10' >
+    <div  >
       <Hero/>
       <FlashSales/>
       <Categories/>
@@ -17,6 +19,7 @@ const Home = () => {
       <Banner/>
       <Products/>
       <NewArrival/>
+      <Footer/>
       
       
       

@@ -16,7 +16,7 @@ const NewArrival = () => {
                 <div className="bg-black min-h-screen p-10">
                     <div className="grid grid-cols-2 gap-4">
 
-                        {/* LEFT BIG CARD */}
+                        
                         <div className=" row-span-2 bg-black rounded-lg overflow-hidden relative ">
                             <img
                                 src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db"
