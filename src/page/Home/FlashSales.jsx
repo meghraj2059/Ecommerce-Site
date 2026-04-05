@@ -1,50 +1,7 @@
 
 import { ArrowLeft, ArrowRight, Eye, Heart } from 'lucide-react'
-import React from 'react'
-
+import products from '../../data'
 const FlashSales = () => {
-  const products = [
-    {
-      id: 1,
-      name: "HAVIT HV-G92 GamePad",
-      price: 120,
-      oldPrice: 160,
-      discount: "-40%",
-      rating: 4.5,
-      reviews: 88,
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxkHrD6T3YE0CUHIJFuyDNM3YoeCnk988ZJw&s"
-    },
-    {
-      id: 2,
-      name: "AK-900 Wired Keyboard",
-      price: 960,
-      oldPrice: 1160,
-      discount: "-35%",
-      rating: 4,
-      reviews: 75,
-      image: "https://img.myipadbox.com/upload/store/product_l/TBD0602123801A.jpg"
-    },
-    {
-      id: 3,
-      name: "IPS LCD Gaming Monitor",
-      price: 370,
-      oldPrice: 400,
-      discount: "-30%",
-      rating: 5,
-      reviews: 99,
-      image: "https://m.media-amazon.com/images/I/81QhbOKkMOL.jpg"
-    },
-    {
-      id: 4,
-      name: "S Series Comfort Chair",
-      price: 375,
-      oldPrice: 400,
-      discount: "-25%",
-      rating: 4.5,
-      reviews: 99,
-      image: "https://img.drz.lazcdn.com/g/kf/S0e5652a4af7140b7a45585c18324bb49O.jpg_720x720q80.jpg"
-    }
-  ];
   return (
     <div className=' py-5 flex p-3 border justify-center items-center'>
       <div className='max-w-7xl mx-auto bg-white p-12'>
@@ -76,7 +33,7 @@ const FlashSales = () => {
             {products.map((item) => (
               <div
                 key={item.id}
-                className='w-70 bg-gray-300 rounded-xl flex flex-col justify-between p-3 shadow-md border'
+                className='w-70 bg-gray-50 rounded-xl flex flex-col justify-between p-3 shadow-md ring ring-gray-200'
               >
 
                 <div className='flex justify-between px-3 pt-3'>
@@ -102,23 +59,26 @@ const FlashSales = () => {
                   />
 
                 </div>
-                <div className='bg-black text-white text-center py-2 rounded-md hover:bg-gray-800 cursor-pointer'>
+                <div className='bg-black text-white text-center py-3 rounded hover:bg-gray-800 cursor-pointer'>
                   Add To Cart
                 </div>
-                <div className='text-black font-semibold text-sm line-clamp-2'>
+                <div className='text-black mt-3 font-semibold text-sm line-clamp-2'>
                   {item.name}
                 </div>
 
-                <div className='flex gap-3 items-center'>
-                  <span className='text-red-600 font-bold'>${item.price}</span>
-                  <span className='line-through text-gray-400 text-sm'>${item.oldPrice}</span>
-                </div>
 
-                <div className='flex gap-2 text-sm text-gray-600'>
-                  <span>⭐ {item.rating}</span>
-                  <span>({item.reviews})</span>
-                </div>
 
+                <div className="flex justify-between">
+                  <div className='flex gap-3 items-center'>
+                    <span className='text-red-600 font-bold'>${item.price}</span>
+                    <span className='line-through font-semibold  text-gray-400 text-sm'>${item.oldPrice}</span>
+                  </div>
+
+                  <div className=' flex gap-2 text-sm  text-gray-600'>
+                    <span>⭐ {item.rating}</span>
+                    <span>({item.reviews})</span>
+                  </div>
+                </div>
               </div>
 
             ))}
@@ -140,4 +100,4 @@ const FlashSales = () => {
   )
 }
 
-export default FlashSales
+export default FlashSales;

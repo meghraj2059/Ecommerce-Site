@@ -9,7 +9,6 @@ const Snowflake = () => {
                     <p className='text-gray-700'>/</p>
                     <p className='text-gray-700 cursor-pointer hover:text-black'>About</p>
 
-
                 </div>
 
                 <div className='text-4xl space-y-3 '>

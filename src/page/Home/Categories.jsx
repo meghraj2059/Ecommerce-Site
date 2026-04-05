@@ -54,9 +54,9 @@ const Categories = () => {
             {products.map((item) => (
               <div
                 key={item.id}
-                div className='w-70 bg-white rounded-xl flex flex-col justify-between p-3 shadow-md'>
+                div className='w-70 bg-white rounded-xl flex flex-col justify-between p-3 shadow-md ring ring-gray-200'>
 
-                <div className='flex flex-col justify-center items-center m'>
+                <div className='flex flex-col justify-center items-center '>
                   <div className='flex justify-center items-center h-20 w-20'>
                     {item.icon && React.cloneElement(item.icon,{size:55})}
                   </div>

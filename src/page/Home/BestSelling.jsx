@@ -55,7 +55,7 @@ const BestSelling = () => {
                     {
                         products.map((obj) => (
 
-                            <div  className='w-70 bg-white rounded-xl flex flex-col justify-between p-3 shadow-md border' key={obj.id}>
+                            <div  className='w-70 bg-gray-50 rounded-xl flex flex-col justify-between p-3 shadow-md ring ring-gray-200' key={obj.id}>
                                 <ul className='space-y-2 flex flex-col items-end'>
                                     <li className='w-7 h-7 rounded-full bg-white flex items-center justify-center'>
                                         <Eye className='size-4' />
@@ -74,19 +74,23 @@ const BestSelling = () => {
                                 <div className='bg-black text-white text-center py-2 rounded-md hover:bg-gray-800 cursor-pointer'>
                                     Add To Cart
                                 </div>
-                                <div className='text-black font-semibold line-clamp-2'>
+                                <div className='text-black mt-3 font-semibold line-clamp-2'>
                                     {obj.name}
                                 </div>
-                                <div className='flex gap-3 items-center'>
+
+                                 <div className='flex justify-between'>
+                                 <div className='flex gap-3 items-center'>
                                     <span className='text-red-600 font-bold'>${obj.price}</span>
                                     <span className='line-through text-gray-400 text-sm'>${obj.oldprice}</span>
                                 </div>
 
                                 <div className='flex gap-2 text-sm text-gray-600'>
-                                    <span>{"⭐".repeat(5)}</span>
+                                    <span>{"⭐".repeat(2)}</span>
                                     <span>({obj.review})</span>
                                 </div>
 
+
+                                 </div>
 
 
 

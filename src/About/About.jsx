@@ -46,9 +46,9 @@ const About = () => {
       </div>
 
     
-    <div className='mt-40 ' >
+    {/* <div className='mt-40 ' >
       <Cart/>
-    </div>
+    </div> */}
     </div>
   )
 }
