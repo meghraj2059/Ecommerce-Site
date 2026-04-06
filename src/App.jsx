@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import About from './About/About'
 import Cart from './About/Cart'
 import Photo from './About/Photo'
+import Contact from './contact/Contact'
+import Checkout from './Checkout/Checkout'
 
 
 const App = () => {
@@ -25,6 +27,11 @@ const App = () => {
          <Route path='/About' element={<About/>}/>
          <Route path='/Cart' element={<Cart/>}/>
          <Route path='/Photo' element={<Photo/>}/>
+         <Route path='/Contact' element={<Contact/>}/>
+         <Route path='/Checkout' element={<Checkout/>}/>
+          <Route path='/Checkout/:id' element={<Checkout/>}/>
+          
+
 
        
       </Routes>
