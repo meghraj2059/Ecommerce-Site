@@ -9,7 +9,7 @@ const Checkout = () => {
     const anotherproduct=products.find(item=>item.id==id);
 
   return (
-    <div className='w-full h-screen bg-amber-400'>
+    <div className='w-full h-full bg-amber-400'>
         <div className='max-w-7xl mx-auto bg-white p-10 '>
             <div className='flex space-x-3 ml-10 text-gray-400 mb-8 '>
                 <p className='text-xl hover:text-black'>Account</p>
@@ -23,10 +23,10 @@ const Checkout = () => {
                 <p className='text-xl hover:text-black'>Checkout</p>
 
             </div>
-            <div className='w-[1100px] h-[800px] bg-white shadow-md rounded border '>
+            <div className='w-[1100px] h-[800px] bg-white shadow-md rounded  '>
              <div className='justify-items-center'>
             <div className='grid grid-cols-2 grid grid-rows-1 w-[1100px] h-[800px] gap-10'>
-                <div className='bg-green-600'>
+                <div className='bg-white'>
                     <div className='text-2xl font-semibold p-10 space-y-6'>
                       <h1>Billing Details</h1>
                      <div>
@@ -80,7 +80,7 @@ const Checkout = () => {
    
                     </div>
                 </div>
-                <div className='bg-blue-300'>
+                <div className='bg-white'>
                     <div
                     className='p-10 flex gap-23 '>
                      <img className='size-20 object-cover'src={product?.image}

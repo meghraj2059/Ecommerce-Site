@@ -40,6 +40,7 @@ const FlashSales = () => {
                   <div className='w-15 h-7 bg-red-700 text-white text-sm flex items-center justify-center rounded'>
                     {item.discount}
                   </div>
+                  
 
                   <ul className='space-y-2'>
                     <li className='w-7 h-7 rounded-full bg-white flex items-center justify-center'>
@@ -78,6 +79,7 @@ const FlashSales = () => {
                     <span>⭐ {item.rating}</span>
                     <span>({item.reviews})</span>
                   </div>
+        
                 </div>
               </div>
 
@@ -101,3 +103,5 @@ const FlashSales = () => {
 }
 
 export default FlashSales;
+
+

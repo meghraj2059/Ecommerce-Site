@@ -10,6 +10,8 @@ import Cart from './About/Cart'
 import Photo from './About/Photo'
 import Contact from './contact/Contact'
 import Checkout from './Checkout/Checkout'
+import Error from './error/Error'
+import SignUp from './signup/SignUp'
 
 
 const App = () => {
@@ -30,7 +32,9 @@ const App = () => {
          <Route path='/Contact' element={<Contact/>}/>
          <Route path='/Checkout' element={<Checkout/>}/>
           <Route path='/Checkout/:id' element={<Checkout/>}/>
-          
+          <Route path='/Error' element={<Error/>}/>
+          <Route path='/SignUP' element={<SignUp/>}/>
+
 
 
        

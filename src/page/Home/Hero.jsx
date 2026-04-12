@@ -5,7 +5,7 @@ import hihi from "../../assets/hihi.png"
 const Hero = () => {
     return (
         <div className="w-full bg-white">
-            <div className=' bg-white max-w-8xl mx-auto  flex justify-center gap-8 px-40'>
+            <div className=' bg-white max-w-7xl mx-auto  flex justify-center gap-8 px-40'>
 
 
                 <div className='w-full  gap-10 h-120 flex '>
